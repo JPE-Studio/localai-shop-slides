@@ -370,6 +370,32 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 .slide{position:relative;inset:auto;opacity:1;pointer-events:auto;transform:none;height:100vh;page-break-after:always}
 .deck-header,.deck-footer,.slide-number,.progress-bar,.notes-overlay,.overview{pointer-events:none}
 .notes{display:none!important}
+</style>
+<style>/* mobile-fix: Responsive Anpassung für Smartphones (Standalone-/GitHub-Pages-Ansicht) */
+@media (max-width: 768px){
+  .tpl-pitch-deck .slide{padding:44px 20px 72px;justify-content:flex-start}
+  .slide{height:auto;min-height:100vh}
+  .tpl-pitch-deck .slide > div[style]{position:static;margin:0 0 14px}
+  .tpl-pitch-deck .h1{font-size:42px}
+  .tpl-pitch-deck .h2{font-size:30px}
+  .tpl-pitch-deck .lede{font-size:16.5px}
+  .tpl-pitch-deck .mega{font-size:88px}
+  .tpl-pitch-deck .metric .n{font-size:42px}
+  .tpl-pitch-deck .section-num{display:none}
+  .grid.g2,.grid.g3,.grid.g4{grid-template-columns:1fr}
+  .grid{gap:14px}
+  .tpl-pitch-deck .card{padding:18px 16px}
+  .tpl-pitch-deck .tbl{display:block;overflow-x:auto;font-size:13.5px;-webkit-overflow-scrolling:touch}
+  .tpl-pitch-deck .tbl th,.tpl-pitch-deck .tbl td{padding:8px 10px}
+  .tpl-pitch-deck .steps li{padding-left:40px}
+  .tpl-pitch-deck .prod .ph{height:170px}
+  .tpl-pitch-deck .prod .ph img{max-height:158px;max-width:100%}
+  .tpl-pitch-deck .ask-box{padding:26px 20px}
+  .tpl-pitch-deck .ask-box .h2{font-size:28px}
+  .deck-footer{left:20px;right:20px;font-size:11px}
+  html{scroll-snap-type:y proximity}
+  .slide{scroll-snap-align:start}
+}
 </style></head>
 <body class="tpl-pitch-deck">
 <div class="deck">
